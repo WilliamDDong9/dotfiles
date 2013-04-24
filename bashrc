@@ -90,7 +90,7 @@ complete -o default -o nospace -F _git_checkout gco
 
 # If the git completion library exists, then use its built-in command prompt
 if [[ -f ${COMPLETION_DIR}/git-completion.bash ]]; then
-  export PS1='\[\033[01;32m\]\h\[\033[01;34m\] \w\[\033[31m\]$(__git_ps1 "(%s)") \[\033[01;34m\]$\[\033[00m\] '']]]]]'
+  export PS1='\[\033[01;32m\]\h\[\033[01;34m\] \w\[\033[31m\]$(__git_ps1 "(%s)") \[\033[01;34m\]$\[\033[00m\] '
 fi
 
 
