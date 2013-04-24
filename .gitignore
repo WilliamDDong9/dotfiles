@@ -1,0 +1,64 @@
+# dotfiles-specific files
+.starter-kit-*.part.*.org
+.org-id-locations
+emacs.d/backups/*
+emacs.d/thumbs/*
+emacs.d/oddmuse/*
+emacs.d/eshell/*
+emacs.d/image-dired/*
+emacs.d/elim/*
+emacs.d/doc/*
+emacs.d/elpa/*
+emacs.d/src/*
+emacs.d/themes/*
+emacs.d/url/*
+
+# Temporary files
+*~
+*.lock
+*.out
+*.swp
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.pyc
+*.pyo
+*.so
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Other
+*gpg
+*el
+*elc
+*html
+*tex
+*pdf
+*txt
+loaddefs.el*
+auto-save-list
+custom.el
+places
+.svn
+tramp
+*.SCORE
+marks
+.session
+abbrev_defs
+scratch
+secret.org
+.emacs.desktop*
+.*~
+agent/*

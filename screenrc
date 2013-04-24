@@ -1,0 +1,12 @@
+escape ^Jj
+termcapinfo xterm-color kD=\E[3~
+term rxvt-unicode
+hardstatus alwayslastline %w
+vbell off
+defscrollback 1000000
+shelltitle ''
+
+screen -t python 0 python
+screen -t emacs 1 emacs
+screen -t git 2 bash
+screen -t bash 3 bash

@@ -1,0 +1,24 @@
+[core]
+    excludesfile = /Users/hackreactor/.gitignore
+[user]
+    name = Hack Reactor Students
+    email = accounts@hackreactor.com
+[credential]
+    helper = cache
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red
+    new = cyan
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
