@@ -11,8 +11,8 @@ if [[ -d $COMPLETION_DIR ]]; then
 fi
 
 # Source the bash-prompt lib
-if [[ -f /opt/boxen/repo/modules/people/files/git-prompt.bash ]]; then
-  source /opt/boxen/repo/modules/people/files/git-prompt.bash
+if [[ -f /opt/boxen/repo/modules/people/files/git-prompt.sh ]]; then
+  source /opt/boxen/repo/modules/people/files/git-prompt.sh
 fi
 
 ###############################################################################
