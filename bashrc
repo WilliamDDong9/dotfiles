@@ -10,9 +10,9 @@ if [[ -d $COMPLETION_DIR ]]; then
   done
 fi
 
-# Source a full version of the bash completion lib
-if [[ -f /opt/boxen/repo/modules/people/files/git-completion.bash ]]; then
-  source /opt/boxen/repo/modules/people/files/git-completion.bash
+# Source the bash-prompt lib
+if [[ -f /opt/boxen/repo/modules/people/files/git-prompt.bash ]]; then
+  source /opt/boxen/repo/modules/people/files/git-prompt.bash
 fi
 
 ###############################################################################
