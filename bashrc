@@ -10,6 +10,11 @@ if [[ -d $COMPLETION_DIR ]]; then
   done
 fi
 
+# Source a full version of the bash completion lib
+if [[ -f /opt/boxen/repo/modules/people/files/git-completion.bash ]]; then
+  source /opt/boxen/repo/modules/people/files/git-completion.bash
+fi
+
 ###############################################################################
 # Environment variables                                                       #
 ###############################################################################
