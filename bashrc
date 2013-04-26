@@ -56,9 +56,6 @@ export HISTCONTROL=ignorespace # Don't store commands beginning with a space
 # Aliases                                                                     #
 ###############################################################################
 
-# Shortcut for opening sublime from cli
-alias subl='open -a "Sublime Text 2"'
-
 # Set helpful ls shortcuts
 alias l='ls -al'
 alias ll='ls -l'
