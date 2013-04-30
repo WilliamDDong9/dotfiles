@@ -44,6 +44,7 @@
 		".hg",
 		"CVS"
 	],
+	"color_scheme": "Packages/Color Scheme - Hack Reactor/Hack Reactor.tmTheme",
 	"font_size": 14.0,
 	"ignored_packages":
 	[
