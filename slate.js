@@ -19,12 +19,20 @@ var layout = {
   pushLeft: S.op('push', {
     'direction' : 'left',
     'style' : 'bar-resize:screenSizeX/2'
+  }),
+
+  pushTop: slate.operation("push", {
+    "direction" : "top",
+    "style" : "bar-resize:screenSizeY/2"
+  }),
+
+  pushBottom: slate.operation("push", {
+    "direction" : "bottom",
+    "style" : "bar-resize:screenSizeY/2"
   })
 };
 
 var operations = {
-  'grid': S.op('grid'),
-
   throw0: S.op('throw', {
     'screen': '0',
     'width': 'screenSizeX',
@@ -40,10 +48,11 @@ var operations = {
 
 slate.bindAll({
   // Directionals
-  'up:ctrl;cmd': layout.maximize,
+  'up:ctrl;cmd;shift': layout.maximize,
+  'up:ctrl;cmd': layout.pushTop,
+  'down:ctrl;cmd': layout.pushBottom,
   'right:ctrl;cmd': layout.pushRight,
   'left:ctrl;cmd': layout.pushLeft,
   '[:ctrl;cmd': operations.throw0,
-  ']:ctrl;cmd': operations.throw1,
-  'esc:cmd': operations.grid
+  ']:ctrl;cmd': operations.throw1
 });
