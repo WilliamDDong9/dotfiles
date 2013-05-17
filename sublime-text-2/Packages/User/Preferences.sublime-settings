@@ -50,5 +50,6 @@
 	[
 		"Vintage"
 	],
-	"tab_size": 2
+	"tab_size": 2,
+	"draw_white_space": "all"
 }
