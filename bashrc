@@ -66,18 +66,6 @@ alias more='less'
 # Make sure stuff piped through less retains color
 alias less='less -R'
 
-# Short Git aliases
-alias gst='git status'
-alias gc='git commit'
-alias gco='git checkout'
-alias gl='git pull'
-alias gpom="git pull origin master"
-alias gp='git push'
-alias gd='git diff'
-alias gb='git branch'
-alias gba='git branch -a'
-alias del='git branch -d'
-
 # Always use 256-color tmux sessions
 alias tmux='tmux -2'
 
