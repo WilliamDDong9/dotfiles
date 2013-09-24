@@ -1,0 +1,33 @@
+{
+  "boss"           : true,
+  "curly"          : true,
+  "eqeqeq"         : true,
+  "expr"           : true,
+  "forin"          : true,
+  "immed"          : true,
+  "newcap"         : true,
+  "noarg"          : true,
+  "noempty"        : true,
+  "nonew"          : true,
+  "undef"          : true,
+  "trailing"       : true,
+  "unused"         : true,
+  "curly"          : true,
+  "debug"          : true,
+  "quotmark"       : true,
+  "browser"        : true,
+  "devel"          : true,
+  "jquery"         : true,
+  "node"           : true,
+  "globals" : {
+    "it"           : false,
+    "xit"          : false,
+    "describe"     : false,
+    "xdescribe"    : false,
+    "beforeEach"   : false,
+    "afterEach"    : false,
+    "expect"       : false,
+    "spyOn"        : false
+  },
+  "indent"         : 2
+}
