@@ -1,5 +1,7 @@
 #! /bin/bash
 
+set -e
+
 # add new packages here
 # (folders in .dotfiles whose contents should be linked into ~/)
 pkgs="bash git etc editors"
