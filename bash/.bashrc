@@ -1,25 +1,13 @@
 # Bail out if not an interactive shell
 [ -z "$PS1" ] && return
 
-COMPLETION_DIR=/opt/boxen/homebrew/etc/bash_completion.d
 
-# Source all completion libraries
-if [[ -d $COMPLETION_DIR ]]; then
-  for file in $(find $COMPLETION_DIR -type l); do
-    source $file
-  done
-fi
-
-# Source the bash-prompt lib
-if [[ -f /opt/boxen/repo/modules/people/files/git-prompt.sh ]]; then
-  source /opt/boxen/repo/modules/people/files/git-prompt.sh
-fi
 
 ###############################################################################
 # Environment variables                                                       #
 ###############################################################################
 
-export PATH="/usr/local/bin:/usr/local/sbin:$HOME/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/.dotfiles/bin:$PATH"
 
 # Use a 256-color terminal setting
 export TERM=screen-256color
@@ -69,7 +57,6 @@ alias less='less -R'
 # Always use 256-color tmux sessions
 alias tmux='tmux -2'
 
-
 ###############################################################################
 # Git coloration, completion                                                  #
 ###############################################################################
@@ -83,10 +70,3 @@ if [[ -f ${COMPLETION_DIR}/git-completion.bash ]]; then
   export PS1='\[\033[01;32m\]\h\[\033[01;34m\] \w\[\033[31m\]$(__git_ps1 "(%s)") \[\033[01;34m\]$\[\033[00m\] '
 fi
 
-
-###############################################################################
-# Boxen                                                                       #
-###############################################################################
-
-# If it's installed, load the boxen env script
-[[ -f /opt/boxen/env.sh ]] && source /opt/boxen/env.sh
